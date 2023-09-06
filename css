@@ -1,1 +1,84 @@
+:root{
+    --color-primario: #fda634;
+    --color-secundario: #ffffff;
+    --color-sombras: #acacac;
+    --color-texto: rgb(8, 8, 8);
+    --fuente-titulos:'Russo One';
+    --fuente-texto-menu: 'Revalia';
+}
 
+*{
+    padding: 0;
+    /* el padding es el margen de dentro */
+    margin: 0;
+    /* el margin es el marge de fuera */
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--color-primario);
+    width: 100%;
+    /* el widht es anchura */
+    top: 0;
+    padding: 22px;
+    box-shadow: 0px 2px 6px var(--color-sombras);
+    /* z index para superponer el header (lo busque en google xd) */
+    z-index: 9999; 
+}
+
+.menu{
+    width: 90%;
+    margin: auto;
+    /* el margin auto es para que el contenido esté cetrado */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+}
+.menu .logo img{
+    height: 60px;
+    width: 150px;
+}
+.menu .enlaces a{
+    margin-right: 1em;
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* inicio banner */
+
+.banner-1{
+    width: 1600px;
+}
+
+.banner1{
+    position: relative;
+    top: 0em;
+}
+
+.texto-banner1 h3{
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    color: white;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+span{
+    color: var(--color-primario);
+}
+
+/* fin banner */
+
+/* inicio cursos */
+
+
+
+/* fin cursos */

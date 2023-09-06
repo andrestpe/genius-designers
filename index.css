@@ -1,7 +1,7 @@
 :root{
     --color-primario: #fda634;
     --color-secundario: #ffffff;
-    --color-sombras: #acacac;
+    --color-sombras: #d6d6d6;
     --color-texto: rgb(8, 8, 8);
     --fuente-titulos:'Russo One';
     --fuente-texto-menu: 'Revalia';
@@ -79,6 +79,40 @@ span{
 
 /* inicio cursos */
 
+.titulo1{
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
 
+.cur{
+    background-color: var(--color-sombras);
+    height: 380px;
+    box-shadow: 0px 5px 5px var(--color-sombras);
+}
+
+.i-curso{
+    height: 250px;
+    width: 500px;
+}
+
+.cursos{
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+.ver-mas{
+    font-family: var(--fuente-titulos);
+    margin-left: 30%;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: var(--color-sombras);
+    padding: 5px 40px;
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+.ver-mas:hover{
+    color: var(--color-primario);
+}
 
 /* fin cursos */

@@ -165,3 +165,79 @@ span{
     color: var(--color-secundario);
 }
 /* fin banner 2 */
+/* inicio bases de datos */
+
+.bas{
+    background-color: var(--color-sombras);
+    width: 550px;
+    height: 450px;
+    /* box-shadow: 0px 5px 5px var(--color-sombras); */
+}
+
+.b-datos{
+    height: 300px;
+    width: 550px;
+}
+
+.bases{
+    font-family: var(--fuente-titulos);
+    text-align: center;
+    font-size: 2em;
+}
+
+.ver-mas3{
+    font-family: var(--fuente-titulos);
+    margin-left: 35%;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: var(--color-sombras);
+    padding: 5px 40px;
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+/* fin bases de datos */
+/* inicio footer */
+
+.footer{
+    background-color: var(--color-primario);
+    position: relative;
+    height: 470px;
+}
+
+.titulo-f{
+    font-family: var(--fuente-texto-menu);
+    color: black;
+    font-size: 2.5em;
+}
+
+.info-f{
+    font-family: var(--fuente-texto-menu);
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.info-f:hover{
+    color: black;
+}
+
+.redes{
+    color: black;
+    font-family: var(--fuente-texto-menu);
+    font-size: 2.5em;
+}
+
+.sociales{
+    color: var(--color-primario);
+    font-size: 3.2em;
+    border-radius: 100%;
+    padding: 0.3em;
+    background-color: black;
+    
+}
+
+.sociales:hover{
+    color: var(--color-primario);
+}
+/* fin de footer */

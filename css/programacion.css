@@ -1,0 +1,235 @@
+:root{
+    --color-primario: #fda634;
+    --color-secundario: #ffffff;
+    --color-sombras: #d6d6d6;
+    --color-texto: rgb(8, 8, 8);
+    --fuente-titulos:'Russo One';
+    --fuente-texto-menu: 'Revalia';
+}
+
+*{
+    padding: 0;
+    /* el padding es el margen de dentro */
+    margin: 0;
+    /* el margin es el marge de fuera */
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--color-primario);
+    width: 100%;
+    /* el widht es anchura */
+    top: 0;
+    padding: 22px;
+    box-shadow: 0px 2px 6px var(--color-sombras);
+    /* z index para superponer el header (lo busque en google xd) */
+    z-index: 9999; 
+}
+
+.menu{
+    width: 90%;
+    margin: auto;
+    /* el margin auto es para que el contenido esté cetrado */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+}
+.menu .logo img{
+    height: 60px;
+    width: 150px;
+}
+.menu .enlaces a{
+    margin-right: 1em;
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Inicio contenido curso */
+
+.imagen-p{
+    height: 350px;
+    width: 1600px;
+    position: absolute;
+}
+
+.titulo-programacion h1{
+    font-family: var(--fuente-titulos);
+    position: relative;
+    color: var(--color-texto);
+    text-align: center;
+    font-size: 5em;
+}
+
+.curso-programacion{
+    background-color: var(--color-sombras);
+    top: 60em;
+
+}
+
+.precio{
+    font-family: var(--fuente-texto-menu);
+    text-align: center;
+}
+
+.precio-tachado{
+    font-family: var(--fuente-texto-menu);
+    color: grey;
+    text-align: center;
+}   
+
+.descuento{
+    font-family: var(--fuente-texto-menu);
+    color: red;
+    text-align: center;
+}   
+
+.añadir{
+    background-color: var(--color-primario);
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-secundario);
+    padding: 15px 30px;
+    margin-left: 22%;
+    font-size: 1.5em;
+}
+
+.comprar{
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-texto);
+    padding: 15px 40px;
+    margin-left: 22%;
+    font-size: 1.5em;
+}
+
+.incluye{
+    font-family: var(--fuente-texto-menu);
+    margin-left: 19%;
+}
+
+.que-incluye{
+    font-family: var(--fuente-texto-menu);
+    margin-left: 19%;
+
+}
+
+.aprenderas{
+    box-shadow: 0px 0px 1px 1px black;
+    padding: 15px;
+}
+
+.titulo-aprenderas{
+    font-family: var(--fuente-titulos);
+}
+
+.lo-que{
+    font-family: var(--fuente-texto-menu);
+}
+/* fin contenido curso */
+/* inicio descripcion curso */
+
+.descripcion{
+    font-family: var(--fuente-texto-menu);
+}
+
+.descripcion1{
+    font-family: var(--fuente-texto-menu);
+    text-align: justify;
+}
+
+/* fin descripcion curso */
+/* inicio modulos */
+
+.modulo-1{
+    background-color: var(--color-sombras);
+    height: 630px;
+}
+
+.modulo-2{
+    background-color: var(--color-sombras);
+    height: 630px;
+}
+
+.modulo-3{
+    background-color: var(--color-sombras);
+    height: 630px;
+}
+
+.modulo-4{
+    background-color: var(--color-sombras);
+    height: 630px;
+}
+
+.modulo-5{
+    background-color: var(--color-sombras);
+    height: 630px;
+}
+
+.modulo-6{
+    background-color: var(--color-sombras);
+    height: 630px;
+}
+
+.img-modulos{
+    width: 640px;
+    height: 380px;
+}
+
+.titulo-modulo{
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+.info-modulo{
+    font-family: var(--fuente-titulos);
+    text-align: justify;
+}
+/* fin modulos */
+/* inicio footer */
+
+.footer{
+    background-color: var(--color-primario);
+    position: relative;
+    height: 470px;
+}
+
+.titulo-f{
+    font-family: var(--fuente-texto-menu);
+    color: black;
+    font-size: 2.5em;
+}
+
+.info-f{
+    font-family: var(--fuente-texto-menu);
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.info-f:hover{
+    color: black;
+}
+
+.redes{
+    color: black;
+    font-family: var(--fuente-texto-menu);
+    font-size: 2.5em;
+}
+
+.sociales{
+    color: var(--color-primario);
+    font-size: 3.2em;
+    border-radius: 100%;
+    padding: 0.3em;
+    background-color: black;
+    
+}
+
+.sociales:hover{
+    color: var(--color-primario);
+}
+/* fin de footer */

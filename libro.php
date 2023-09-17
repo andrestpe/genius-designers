@@ -8,9 +8,9 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
     $reclamo=$_POST['reclamo'];
 
     // Indicamos el correo del destinatario
-    $destinatario='retrolightrhlm@gmail.com';
+    $destinatario='¨¨@gmail.com';
     // Indicamos el asunto del correo
-    $asunto='📢Reclamo de usuario Retro Light🚨';
+    $asunto='📢Reclamo de usuario Genius designers🚨';
     // Diseñamos el cuerpo o contenido del mensaje
     $cuerpo="Nombres: " . $nombres . "\n";
     $cuerpo="Apellidos: " . $apellidos . "\n";

@@ -1,0 +1,308 @@
+:root{
+    --color-primario: #fda634;
+    --color-secundario: #ffffff;
+    --color-sombras: #d6d6d6;
+    --color-texto: rgb(8, 8, 8);
+    --fuente-titulos:'Russo One';
+    --fuente-texto-menu: 'Revalia';
+}
+
+*{
+    padding: 0;
+    /* el padding es el margen de dentro */
+    margin: 0;
+    /* el margin es el marge de fuera */
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--color-primario);
+    width: 100%;
+    /* el widht es anchura */
+    top: 0;
+    padding: 22px;
+    box-shadow: 0px 2px 6px var(--color-sombras);
+    /* z index para superponer el header (lo busque en google xd) */
+    z-index: 9999; 
+}
+
+.menu{
+    width: 90%;
+    margin: auto;
+    /* el margin auto es para que el contenido esté cetrado */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+}
+.menu .logo img{
+    height: 60px;
+    width: 150px;
+}
+.menu .enlaces a{
+    margin-right: 1em;
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* inicio buscador */
+
+#input-search{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    text-indent: 10px;
+    font-family: var(--fuente-texto-menu);
+}
+
+.content-search{
+    width: 52%;
+    max-height: 600px;
+    position: fixed;
+    top: 104px;
+    left: 16em;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    z-index: 9999;
+}
+
+.content-table{
+    width: 100%;
+    max-height: 600px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.493);
+    margin-left: 10px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.content-table table{
+    width: 100%;
+}
+
+tbody tr td a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--fuente-texto-menu);
+}
+
+tbody tr td a:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+#table_length, #table_filter, #table_info, #table_paginate{
+    display: none;
+}
+
+/* fin buscador */
+
+/* Inicio contenido curso */
+
+.imagen-d{
+    height: 350px;
+    width: 1600px;
+    position: absolute;
+}
+
+.titulo-desarrollo h1{
+    font-family: var(--fuente-titulos);
+    position: relative;
+    color: var(--color-texto);
+    text-align: center;
+    font-size: 5em;
+}
+
+.titulo-desarrollo h2{
+    font-family: var(--fuente-titulos);
+    position: relative;
+    color: var(--color-texto);
+    text-align: center;
+    font-size: 2em; 
+}
+
+.curso-desarrollo{
+    background-color: var(--color-sombras);
+    top: 60em;
+
+}
+
+.precio{
+    font-family: var(--fuente-texto-menu);
+    text-align: center;
+}
+
+.precio-tachado{
+    font-family: var(--fuente-texto-menu);
+    color: grey;
+    text-align: center;
+}   
+
+.descuento{
+    font-family: var(--fuente-texto-menu);
+    color: red;
+    text-align: center;
+}   
+
+.añadir{
+    background-color: var(--color-primario);
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-secundario);
+    padding: 15px 30px;
+    margin-left: 22%;
+    font-size: 1.5em;
+}
+
+.comprar{
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-texto-menu);
+    color: var(--color-texto);
+    padding: 15px 40px;
+    margin-left: 22%;
+    font-size: 1.5em;
+}
+
+.incluye{
+    font-family: var(--fuente-texto-menu);
+    margin-left: 19%;
+}
+
+.que-incluye{
+    font-family: var(--fuente-texto-menu);
+    margin-left: 19%;
+
+}
+
+.texto-desarrollo{
+    font-family: var(--fuente-texto-menu);
+    font-size: 1.4em;
+    text-align: justify;
+
+}
+
+.aprenderas{
+    box-shadow: 0px 0px 1px 1px black;
+    padding: 15px;
+}
+
+.titulo-aprenderas{
+    font-family: var(--fuente-titulos);
+}
+
+.lo-que{
+    font-family: var(--fuente-texto-menu);
+}
+
+.tipos{
+    font-family: var(--fuente-titulos);
+    margin-left: 9%;
+}
+
+.lenguajes{
+    justify-content: space-between;
+}
+
+.etapas{
+    font-family: var(--fuente-titulos);
+    margin-left: 9%;
+}
+
+.imagen-e{
+    width: 640px;
+    height: 380px;
+}
+
+.imagen-a{
+    width: 640px;
+    height: 200px;
+}
+
+
+
+.info-e1{
+    font-family: var(--fuente-texto-menu);
+    text-align: center;
+}
+
+.info-ne1{
+    font-family: var(--fuente-texto-menu);
+    text-align: center;
+    font-weight: bold;
+}
+/* fin contenido curso */
+/* inicio footer */
+
+.pie_pagina{
+    padding: 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+  
+  .pie_pagina .redes_sociales{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .pie_pagina .redes_sociales i{
+    color: white;
+    font-size: 30px;
+    padding: 0px 25px;
+  }
+  
+  .pie_pagina, .pie_texto{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-family: var(--fuente-texto-menu);
+  }
+
+  .footer{
+    background-color: var(--color-primario);
+  }
+
+  footer p.h5{
+    text-align: justify;  
+    padding-left: 30%;
+    font-family: var(--fuente-titulos);
+    font-size: 1.6em;
+    color: var(--color-texto);
+  }
+  
+  footer .link-foot{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    padding-left: 30%;
+    font-family: var(--fuente-texto-menu);
+    
+  } 
+
+  footer .link-foot:hover{
+    color: var(--color-secundario);
+    font-family: var(--fuente-texto-menu);
+    
+  } 
+
+  footer p{
+    margin: auto;
+    text-align: justify;
+    text-decoration: none;
+    color: black;
+    padding-left: 30%;
+    font-family: var(--fuente-texto-menu);
+    
+  } 
+
+  footer{
+    padding-bottom: 30px;
+    background-color: rgb(184, 177, 177);
+  }
+  footer a:hover{
+    color: black;
+  }
+/* fin de footer */

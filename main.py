@@ -47,6 +47,38 @@ def wa_login():
     print(_error)
     return render_template('wa_especializaciones.html',error = _error)
 
+@app.route('/wa_Analisis', methods=['GET'])
+def wa_login():
+    _error = request.args.get('error')
+    if _error is None:
+        _error = 0
+    print(_error)
+    return render_template('wa_Analisis.html',error = _error)
+
+@app.route('/wa_Backend', methods=['GET'])
+def wa_login():
+    _error = request.args.get('error')
+    if _error is None:
+        _error = 0
+    print(_error)
+    return render_template('wa_Backend.html',error = _error)
+
+@app.route('/wa_Frontend', methods=['GET'])
+def wa_login():
+    _error = request.args.get('error')
+    if _error is None:
+        _error = 0
+    print(_error)
+    return render_template('wa_Frontend.html',error = _error)
+
+@app.route('/wa_Oracle', methods=['GET'])
+def wa_login():
+    _error = request.args.get('error')
+    if _error is None:
+        _error = 0
+    print(_error)
+    return render_template('wa_Oracle.html',error = _error)
+
 
 
 if __name__ == '__main__':

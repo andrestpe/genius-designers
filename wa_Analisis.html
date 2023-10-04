@@ -11,11 +11,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" href="css/analisis.css">
-    <script src="js/buscador.js"></script>
+    <link href="{{ url_for('static', filaname='web/js/jquery.js') }}" rel='stylesheet">
+    <link href="{{ url_for('static', filaname='web/js/jquery.dataTables.min.js') }}" rel='stylesheet">
+    <link href="{{ url_for('static', filaname='web/css/analisis.css') }}" rel='stylesheet">
+    <link href="{{ url_for('static', filename='web/img/gd naranja.jpeg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/banner-analisis.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/imagenes pagina/cursos/desarrollo web.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis VS.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis 1.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis 5.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis 3.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis 7.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis 2.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Analisis 6.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filaname='web/js/buscador.js') }}" rel='stylesheet">
 
+        
 </head>
 <body>
 
@@ -24,7 +35,7 @@
         
         <nav class="menu">
             <nav class="logo">
-                <img src="imagenes pagina/gd naranja.jpeg" alt="">
+                <img src="/static/web/imagenes pagina/gd naranja.jpeg" alt="">
             </nav>
             <input type="search" id="input-search" placeholder="Buscar aqui">
     
@@ -104,7 +115,7 @@
         <!-- inicio costo curso -->
         <div class="nombre-desarrollo">
             <div class="banner-desarrollo">
-                <img src="imagenes pagina/img 13-09/banner-analisis.jpg" alt="" class="img-fluid imagen-d">
+                <img src="/static/web/imagenes pagina/img 13-09/banner-analisis.jpg" alt="" class="img-fluid imagen-d">
                 
                 <div class="titulo-desarrollo">
                     <br><br>
@@ -120,7 +131,7 @@
                 <section class="row">
                     <section class="col-xs-12 col-sm-12 col-md-5">
                         <div class="curso-desarrollo">
-                            <img src="imagenes pagina/especializaciones/analista de datos.jpg" alt="" class="img-fluid desarrollo">
+                            <img src="/static/web/imagenes pagina/especializaciones/analista de datos.jpg" alt="" class="img-fluid desarrollo">
                             <br>
                             <h1 class="precio">119.90 S/.</h1> <h4 class="precio-tachado"><del>299.90 S/.</del></h4>
                             <h3 class="descuento">60 % de descuento</h3>
@@ -169,7 +180,7 @@
                     </section>                  
                     
                     <section class="col-xs-12 col-sm-12 col-md-6">
-                        <img src="imagenes pagina/img 13-09/Analisis VS.png" alt="" class="img-fluid imagen-a">
+                        <img src="/static/web/imagenes pagina/img 13-09/Analisis VS.png" alt="" class="img-fluid imagen-a">
                     </section>
                 </section>
             </article>
@@ -184,7 +195,7 @@
                 <section class="row">
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa1">
-                            <img src="imagenes pagina/img 13-09/Analisis 1.jpg" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Analisis 1.jpg" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">Analisis de Componentes Principales</h3>
     
@@ -193,7 +204,7 @@
     
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa2">
-                            <img src="imagenes pagina/img 13-09/Analisis 5.jpg" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Analisis 5.jpg" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">Analisis de Correspondencia Binaria</h3>
 
@@ -202,7 +213,7 @@
 
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa3">
-                            <img src="imagenes pagina/img 13-09/Analisis 3.png" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Analisis 3.png" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">Analisis de Correspondencia Multiple</h3>
 
@@ -212,7 +223,7 @@
     
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa4">
-                            <img src="imagenes pagina/img 13-09/Analisis 7.jpg" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Analisis 7.jpg" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">Analisis Discriminante</h3>
     
@@ -226,7 +237,7 @@
             <section class="row">
                 <section class="col-xs-12 col-sm-12 col-md-6">
                     <div class="etapa3">
-                        <img src="imagenes pagina/img 13-09/Analisis 2.png" alt="" class="img-fluid imagen-e">
+                        <img src="/static/web/imagenes pagina/img 13-09/Analisis 2.png" alt="" class="img-fluid imagen-e">
                         <br>
                         <h3 class="info-e1">Basados en Nucleos:</h3>
                         <br>
@@ -238,7 +249,7 @@
 
                 <section class="col-xs-12 col-sm-12 col-md-6">
                     <div class="etapa3">
-                        <img src="imagenes pagina/img 13-09/Analisis 6.jpg" alt="" class="img-fluid imagen-e">
+                        <img src="/static/web/imagenes pagina/img 13-09/Analisis 6.jpg" alt="" class="img-fluid imagen-e">
                         <br>
                         <h3 class="info-e1">Basados en Redes Neuronales</h3>
                         <br>

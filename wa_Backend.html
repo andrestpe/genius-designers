@@ -11,9 +11,18 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" href="css/backend.css">
+    <link href="{{ url_for('static', filaname='web/js/jquery.js') }}" rel='stylesheet">
+    <link href="{{ url_for('static', filaname='web/js/jquery.dataTables.min.js') }}" rel='stylesheet">
+    <link href="{{ url_for('static', filaname='web/css/backend.css') }}" rel='stylesheet">
+    <link href="{{ url_for('static', filename='web/img/gd naranja.jpeg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/banner-backend.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/imagenes pagina/cursos/desarrollo web.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Backend 1.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Backend 2.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Backend 3.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Backend 4.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/img/Backend 5.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filaname='web/js/buscador.js') }}" rel='stylesheet">
 
 </head>
 <body>
@@ -23,7 +32,7 @@
         
         <nav class="menu">
             <nav class="logo">
-                <img src="imagenes pagina/gd naranja.jpeg" alt="">
+                <img src="/static/web/imagenes pagina/gd naranja.jpeg" alt="">
             </nav>
             <input type="search" id="input-search" placeholder="Buscar aqui">
     
@@ -103,7 +112,7 @@
         <!-- inicio costo curso -->
         <div class="nombre-desarrollo">
             <div class="banner-desarrollo">
-                <img src="imagenes pagina/img 13-09/banner-backend.png" alt="" class="img-fluid imagen-d">
+                <img src="/static/web/imagenes pagina/img 13-09/banner-backend.png" alt="" class="img-fluid imagen-d">
                 
                 <div class="titulo-desarrollo">
                     <br><br>
@@ -119,7 +128,7 @@
                 <section class="row">
                     <section class="col-xs-12 col-sm-12 col-md-5">
                         <div class="curso-desarrollo">
-                            <img src="imagenes pagina/cursos/desarrollo web.jpg" alt="" class="img-fluid desarrollo">
+                            <img src="/static/web/imagenes pagina/cursos/desarrollo web.jpg" alt="" class="img-fluid desarrollo">
                             <br>
                             <h1 class="precio">89.90 S/.</h1> <h4 class="precio-tachado"><del>299.90 S/.</del></h4>
                             <h3 class="descuento">70 % de descuento</h3>
@@ -178,7 +187,7 @@
                 <section class="row">
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa1">
-                            <img src="imagenes pagina/img 13-09/Backend 1.jpg" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Backend 1.jpg" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">Se debe manejar la configuración de los servidores, o debe conocer lo suficiente para poder hacer reportes</h3>
     
@@ -187,7 +196,7 @@
     
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa2">
-                            <img src="imagenes pagina/img 13-09/Backend 2.png" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Backend 2.png" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">También debe saber administrar cuando menos un Content Management System (CMS), preferiblemente WordPress</h3>
 
@@ -196,7 +205,7 @@
 
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa3">
-                            <img src="imagenes pagina/img 13-09/Backend 3.jpg" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Backend 3.jpg" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">La lógica y el orden deben ser los dos pilares en los que se fundamente su trabajo</h3>
 
@@ -206,7 +215,7 @@
     
                     <section class="col-xs-12 col-sm-12 col-md-3">
                         <div class="etapa4">
-                            <img src="imagenes pagina/img 13-09/Backend 4.png" alt="" class="img-fluid imagen-e">
+                            <img src="/static/web/imagenes pagina/img 13-09/Backend 4.png" alt="" class="img-fluid imagen-e">
                             <br>
                             <h3 class="info-e1">Debe conocer sobre metodologías de la programación, sus fundamentos y manejar con soltura estos lenguajes</h3>
     
@@ -228,7 +237,7 @@
                     </section>  
                     
                     <section class="col-xs-12 col-sm-12 col-md-4">
-                        <img src="imagenes pagina/img 13-09/Backend 5.jpg" alt="" class="img-fluid imagen-a">
+                        <img src="/static/web/imagenes pagina/img 13-09/Backend 5.jpg" alt="" class="img-fluid imagen-a">
                     </section>
                 </section>
             </article>

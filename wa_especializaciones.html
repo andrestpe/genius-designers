@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-
+    <title>Especializaciones</title>
     <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Russo+One&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/5f65d74747.js" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <script src="js/popper.min.js"></script> -->
+    <link href="{{ url_for('static', filename='web/js/jquery.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/jquery.dataTables.min.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/popper.min.js') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/cursos.css"> -->
+    <link href="{{ url_for('static', filename='web/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/css/sweetalert2.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/css/cursos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/imagenes_pagina/gd naranja.jpeg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/imagenes_pagina/carrito de compras 2.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/imagenes_pagina/especializaciones/analista de datos.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/imagenes_pagina/especializaciones/desarrollador frontend.jpg') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/imagenes_pagina/especializaciones/desarrollador backend.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='web/js/jquery-3.4.1.min.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/bootstrap.min.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/sweetalert2.min.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/carrito.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/pedido.js') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/js/buscador.js') }}" rel="stylesheet">
+
 </head>
 <body>
     <!-- inicio barra de navegacion -->
@@ -27,7 +44,7 @@
         
         <nav class="menu">
             <nav class="logo">
-                <img src="imagenes pagina/gd naranja.jpeg" alt="">
+                <img src="static/web/imagenes pagina/gd naranja.jpeg" alt="">
             </nav>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -37,7 +54,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
-                                <img src="imagenes pagina/carrito de compras 2.png"
+                                <img src="static/web/imagenes pagina/carrito de compras 2.png"
                                     class="nav-link dropdown-toggle img-fluid" height="120px" width="120px" href="#"
                                     id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
@@ -79,15 +96,15 @@
                 
                 <tbody>
                     <tr>
-                        <td><a href="index.html">Inicio</a></td>
+                        <td><a href="wa_index.html">Inicio</a></td>
                     </tr>
                     
                     <tr>
-                        <td><a href="cursos.html">cursos</a></td>
+                        <td><a href="wa_cursos.html">cursos</a></td>
                     </tr>
                     
                     <tr>
-                        <td><a href="especializaciones.html">especializaciones</a></td>
+                        <td><a href="wa_especializaciones.html">especializaciones</a></td>
                     </tr>
                     
                     <tr>
@@ -132,9 +149,9 @@
     </div>
 
             <div class="enlaces">
-                <a href="index.html">Inicio</a>
-                <a href="cursos.html">Cursos</a>
-                <a href="especializaciones.html">Especializaciones</a>
+                <a href="wa_index.html">Inicio</a>
+                <a href="wa_cursos.html">Cursos</a>
+                <a href="wa_especializaciones.html">Especializaciones</a>
                 <a href="login.html">Log in</a>
             </div>
         </nav>
@@ -144,7 +161,7 @@
     <br><br>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
-        <h1 class="display-4 mt-4">Nuéstros Cursos</h1>
+        <h1 class="display-4 mt-4">Nuéstras Especializaciones</h1>
     </div>
 
     <div class="container" id="lista-productos">
@@ -153,101 +170,62 @@
 
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-bold">DESARROLLO WEB</h4>
+                    <h4 class="my-0 font-weight-bold">ANALISTA DE DATOS</h4>
                 </div>
                 <div class="card-body">
-                    <img src="imagenes pagina/cursos/desarrollo web.jpg" class="card-img-top">
-                    <h1 class="card-title pricing-card-title precio">S/. <span class="">69.90</span></h1>
+                    <img src="static/web/imagenes pagina/especializaciones/analista de datos.jpg" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">S/. <span class="">119.90</span></h1>
 
                     <ul class="list-unstyled mt-3 mb-4">
                         <li></li>
-                        <li>34,5 horas de vídeo bajo demanda </li>
-                        <li>143 recursos descargables</li>
+                        <li>20 horas de vídeo bajo demanda </li>
+                        <li>85 recursos descargables</li>
                         <li>Certificado de finalización </li>
                     </ul>
-                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
                 </div>
             </div>
 
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-bold">  PROGRAMACION </h4>
+                    <h4 class="my-0 font-weight-bold">  FRONTEND </h4>
                 </div>
                 <div class="card-body">
-                    <img src="imagenes pagina/cursos/programacion.jpg" class="card-img-top">
-                    <h1 class="card-title pricing-card-title precio">S/. <span class="">104.90</span></h1>
-
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li></li>
-                        <li> 36 horas de vídeo bajo demanda</li>
-                        <li> 62 recursos descargables </li>
-                        <li> Certificado de finalización</li>
-                    </ul>
-                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
-                </div>
-            </div>
-
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-bold"> SEGURIDAD INFORMATICA</h4>
-                </div>
-                <div class="card-body">
-                    <img src="imagenes pagina/cursos/seguridad informatica.jpg" class="card-img-top">
-                    <h1 class="card-title pricing-card-title precio">S/. <span class="">164.90</span></h1>
-
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li></li>
-                        <li> 22.5 horas de vídeo bajo demanda </li>
-                        <li> 35 recursos descargables</li>
-                        <li> Certificado de finalización</li>
-                    </ul>
-                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="card-deck mb-3 text-center">
-
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-bold"> SQL </h4>
-                </div>
-                <div class="card-body">
-                    <img src="imagenes pagina/sql.jpg" class="card-img-top">
+                    <img src="static/web/imagenes pagina/especializaciones/desarrollador frontend.jpg" class="card-img-top">
                     <h1 class="card-title pricing-card-title precio">S/. <span class="">59.90</span></h1>
 
                     <ul class="list-unstyled mt-3 mb-4">
                         <li></li>
-                        <li> 20,5 horas de vídeo bajo demanda</li>
-                        <li> 120 recursos descargables</li>
+                        <li> 25 horas de vídeo bajo demanda</li>
+                        <li> 110 recursos descargables </li>
                         <li> Certificado de finalización</li>
                     </ul>
-                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
                 </div>
             </div>
 
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-bold"> ORACLE </h4>
+                    <h4 class="my-0 font-weight-bold"> BACKEND</h4>
                 </div>
                 <div class="card-body">
-                    <img src="imagenes pagina/oracle.jpg" class="card-img-top">
-                    <h1 class="card-title pricing-card-title precio">S/. <span class="">49.90</span></h1>
+                    <img src="static/web/imagenes pagina/especializaciones/desarrollador backend.png" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">S/. <span class="">89.90</span></h1>
 
                     <ul class="list-unstyled mt-3 mb-4">
                         <li></li>
-                        <li> 22,5 horas de vídeo bajo demanda</li>
-                        <li> 125 recursos descargables</li>
-                        <li> Certificado de finalización </li>
+                        <li> 28 horas de vídeo bajo demanda </li>
+                        <li> 70 recursos descargables</li>
+                        <li> Certificado de finalización</li>
                     </ul>
-                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
                 </div>
             </div>
+
         </div>
 
-    </div>    
-    
+    </div>
+
     <div class="pie_pagina">
         <div class="redes_sociales">
             <a href="http:\\www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
@@ -278,24 +256,26 @@
                 <div class="col-xs-12 col-md-12 col-lg-6">
                     <p class="h5">Legal</p>
                     <div>
-                        <a href="http:\\www.facebook.com" class="link-foot">Contacto</a>
+                        <a href="https://wa.link/t8gxrt" class="link-foot">Contacto</a>
                     </div>
                     <div>
-                        <a href="#" class="link-foot">Libro de reclamaciones</a>
+                        <a href="librodereclamacion.html" class="link-foot">Libro de reclamaciones</a>
                     </div>
                     <div>
-                        <a href="#" class="link-foot">Preguntas frecuentes</a>
+                        <a href="preguntas.html" class="link-foot">Preguntas frecuentes</a>
                     </div>
                 </div>
 
             </div>
         </div>
     </footer>
-    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/pedido.js"></script>
-    <script src="js/buscador.js"></script>
+    <script src="js/buscador.js"></script> -->
+    
 </body>
 </html>

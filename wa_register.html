@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="css/register.css"> -->
+
+    <link href="{{ url_for('static', filename='web/css/register.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='web/imagenes_pagina/gd naranja.jpeg') }}" rel="icon">
+</head>
+
+<body style="background-image: url(./FONDO2);">
+    <!-- inicio barra de navegacion -->
+    <header>
+        <nav class="menu">
+            <nav class="logo">
+                <img src="static/web/imagenes pagina/gd naranja.jpeg" alt="">
+            </nav>
+            <div class="enlaces">
+                <a href="wa_index.html">Inicio</a>
+                <a href="wa_cursos.html">Cursos</a>
+                <a href="wa_especializaciones.html">Especializaciones</a>
+                <a href="wa_login.html" id="registro-link">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- fin barra de navegacion -->
+   <!-- Inicio de Registro -->
+  <!-- inicio sección Login -->
+<div class="login-section">
+    <h2>Register</h2>
+    <form id="register-form" action="#" method="POST">
+        <div class="form-group">
+            <label for="usuario">Your Username</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Your user name" required>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="Email" id="Email" name="Email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Password</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Your password" required>
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Confirm Password</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Your password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div class="registro-link">
+        Do you have an account? <a href="wa_login.html" id="registro-btn">LOGIN</a>
+    </div>
+</div>
+<!-- fin sección Login -->
+  
+    
+</body>
+</html>
